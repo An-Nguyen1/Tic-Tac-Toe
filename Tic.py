@@ -6,6 +6,7 @@ def print_board():
 		print(board[i])
 	return board
 def check_win():
+	global game_over
 	if board[row][0]==board[row][1]==board[row][2]== turn:
 		print('player {} you win!!!'.format(turn))
 		game_over = True
